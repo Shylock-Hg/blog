@@ -1,0 +1,4 @@
+#git diff ignore
+*.md       diff=nodiff
+*.markdown diff=nodiff
+/_posts/   diff=nodiff
