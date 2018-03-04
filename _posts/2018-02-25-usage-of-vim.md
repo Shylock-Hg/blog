@@ -29,9 +29,11 @@ day_quote:
 |`h-j-k-l`|  ... |
 |`:30` | to jump to 30th raw.|
 |`<G>` | to jump to final raw.|
+|`<0>` | to jump to head of current line|
+|`<$>` | to jump to tail of current line|
+|`<S-%>` | to jump to corresponding bracket.|
 |`<S-#>` | to jump to previous word of cursor pointed.| 
 |`<S-*>` | to jump to next word of cursor pointed.|
-|`<S-%>` | to jump to corresponding bracket.|
 
 ## Usage of cmd
 
