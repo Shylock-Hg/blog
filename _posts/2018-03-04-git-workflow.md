@@ -31,12 +31,15 @@ day_quote:
   9. back to 3.
 
 ## With remote
+
+  **based on commit**
   1. `git fetch [bookmark]`:download all history from the remote repository bookmark.
   2. `git merge [bookmark]/[branch]`:combines bookmark's branch into current local branch.
   3. `git push [alias] [branch]`:upload all local branch commits to remote repository. 
 
 ## With upstream(special remote)
 
+  **based on commit**
   1. `git remote -v`:review all remote repositories.
   2. `git remote add upstream <upstream url>`:add upstream repository.
   3. `git fetch upstream`:downloads all history from the upstream.
