@@ -59,5 +59,3 @@ day_quote:
 ### Group
   `chgrp users file0 [file1 ...]` -> change group to users.
 
-
-
