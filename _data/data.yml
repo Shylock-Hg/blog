@@ -29,7 +29,7 @@ website:
 # Sidebar
   sidebar:
     avatar: typing.svg
-    title: "Hey, <br> I'm Typing."
+    title: "Hey, <br> I'm Shylock."
     menu:
       home:
         text: "Hello!"
@@ -57,10 +57,10 @@ website:
         text: "Comments:"
       author:
         avatar: typing.svg
-        title: Author
-        name: Typing Theme
+        title: Shylock
+        name: Shylock
         description: |
-          Hi! I'm the Typing theme. :)
+          Hi! I'm Shylock Hg,major in ML & NLP & embedded system :)
       share:
         title: "Share this post"
       comments:
@@ -69,9 +69,9 @@ website:
     contact:
       language: "pt-BR"
       placeholder:
-        name: "Your full name"
+        name: "Shylock Hg"
         subject: "Subject matter"
-        email: "Your email"
+        email: "tcath2s@gmail.com"
         message: "What would you like to say?"
       send:
         permalink: "/contact/sent/successful/"
@@ -91,26 +91,26 @@ website:
     message: "Simplicity is fashionable."
 # User data
 userdata:
-  email: william.costa.canin@gmail.com # E.g: youremail@domain.com
-  twitter: # E.g: "@my_twitter"
+  email: tcath2s@gmail.com # E.g: youremail@domain.com
+  twitter: "@shylockhg" # E.g: "@my_twitter"
   disqus:
-    username: # E.g: myuser
+    username: shylock-hg-github-io-1 # E.g: myuser
   # You can add at most 5 social. If you do not want 5, you can remove the block containing: title, id, icon, url.
   socials:
     title: Follow Me!
     links:
       - title: GitHub
-        id: github
+        id: Shylock-Hg
         icon: fa-github
         url: https://github.com
 
       - title: Twitter
-        id: twitter
+        id: shylockhg
         icon: fa-twitter
         url: https://twitter.com
 
       - title: Google Plus
-        id: gplus
+        id: Shylock Hg
         icon: fa-google-plus
         url: https://plus.google.com
 
