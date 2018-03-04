@@ -22,7 +22,7 @@ day_quote:
 ## Description
 
   Use `stat <file>` to check the permission of file(dir),its echo look like as `-rw-rw-rwx`.
-  The first `'-'` or `'l'` means **regular file** or **link file**.
+  The first `'-'` , `'l'` , `d` means **regular file**, **link file** and **directory**.
   The the `'rwx-'` means **read**, **write**, **execute** and **no**.
   Finally,the three segments of `rwx` successively means **owner**, **group** and **all other users**.
 
