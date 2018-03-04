@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2018-02-27 20:00:18 +0800
-tags: ['others']
+title:  "Typical workflow of Git-SCM"
+date:   2018-03-04 
+tags: ['git']
 published: true
 comments: true
 script: [post.js]
