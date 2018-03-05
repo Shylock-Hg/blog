@@ -51,5 +51,6 @@ day_quote:
         upstream
        /
   local
-       \remote
+       \
+        remote
 
