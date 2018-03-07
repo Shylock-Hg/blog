@@ -17,7 +17,17 @@ while getopts 'n:' args
 do
 	case $args in
 		n)
+                        if [ ! -e _posts/ ] 
+                        then
+                                mkdir _posts
+                        fi
+
 			cp -f template.md _posts/$today-$OPTARG.md
+
+                        if [ -e _posts/$today-$OPTARG.md ]
+                        then
+                                echo "ok!"
+                        fi
 			;;
 		?)
 			echo "Unknown argument $OPTARG!"
