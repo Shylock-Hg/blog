@@ -24,11 +24,12 @@ day_quote:
   2. `git branch [branch-name]`:create new branch to modify. 
   3. make change.
   4. `git status`:check file changed by not staged.
-  5. `git diff [file]`:check difference of file bwteen staged
-  6. `git add [file ...]`:snapshots the files in preparation for versioning.
-  7. `git reset [file ...]`:unstages the file,but preserve contents. 
-  8. `git commit -m "[description]"`:records file snapshots permannently in version history.
-  9. back to 3.
+  5. `git checkout <file>`:reset file to last commit.
+  6. `git diff [file]`:check difference of file bwteen staged
+  7. `git add [file ...]`:snapshots the files in preparation for versioning.
+  8. `git reset [file ...]`:unstages the file,but preserve contents. 
+  9. `git commit -m "[description]"`:records file snapshots permannently in version history.
+  10. back to 3.
 
 ## With remote
 
