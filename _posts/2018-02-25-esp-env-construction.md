@@ -7,7 +7,7 @@ published: true
 comments: true
 script: [post.js]
 excerpted: |
-    You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site ...
+        Build esp32 environment in archlinux.
 day_quote:
   title: The word of the day!
   description: |

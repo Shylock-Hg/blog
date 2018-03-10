@@ -7,11 +7,11 @@ published: true
 comments: true
 script: [post.js]
 excerpted: |
-    You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site ...
+        A tip of button events detection at embedded system. 
 day_quote:
-  title: The word of the day!
+  title: Cheer up!
   description: |
-    Put a very powerful message.
+        Learning!
 ---
 
 ## 1.Problems
