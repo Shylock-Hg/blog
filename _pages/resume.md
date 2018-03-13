@@ -18,9 +18,9 @@ excerpt: |
 * Indice
 {: toc}
 
-#  Typing
+#  Shylock Hg
 
-### A theme for Jekyll
+### Personal Resume
 
 <br>
 
@@ -49,18 +49,21 @@ excerpt: |
 
 ## Skills
 
-#### **Front end**
+#### **Embedded System**
 
-{% badge c|16px %}
+{% badge c/c++|16px %}
 {% badge python|16px %}
 
 {% badge linux|16px %}
 {% badge bash|16px %}
 {% badge vim|16px %}
+{% badge git|16px %}
 {% badge make|16px %}
+{% badge gcc|16px %}
 
 {% badge stm32|16px %}
+{% badge c51|16px %}
 
 ## Projects
 
-* [Typing Jekyll Template](https://github.com/williamcanin/typing-jekyll-template){:target="_blank"} - Typing, is a template for Jekyll built especially for those who want to have a blog and pages quickly and lightly.
+* [AD602](https://github.com/Shylock-Hg/AD602_G1S1){:target="_blank"} - AD602, is a wearable device for cainiao to improve effectiveness of picking.

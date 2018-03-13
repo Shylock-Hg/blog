@@ -15,10 +15,10 @@ If you wanted to know about my favorite chores, this is the correct page. You fi
 
 ## Major collaborations
 
-[Typing Theme](https://github.com/williamcanin/typing-jekyll-template) : Creating themes for Jekyll   
+[AD602](https://github.com/Shylock-Hg/AD602_G1S1) : Wearable device for cainiao.
 
 
-|[Typing Jekyll Template](https://github.com/williamcanin/typing-jekyll-template){:target="_blank"}|
+|[AD602](https://github.com/Shylock-Hg/AD602_G1S1){:target="_blank"}|
 --------------------------|----------------------------
 | **Status**: <label style="color:green;">Active</label> |
-| **Description**: Typing, is a template for Jekyll built especially for those who want to have a blog and pages quickly and lightly. |
+| **Description**: AD602, is a wearable device for cainiao to improve effectiveness of picking. |
