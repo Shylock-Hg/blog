@@ -7,7 +7,7 @@ published: true
 comments: true
 script: [post.js]
 excerpted: |
-	The base rule of makefile.
+    The base rule of makefile.
 day_quote:
   title: Learning!
   description: |
