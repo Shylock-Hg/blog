@@ -2,3 +2,5 @@
 /_posts/   diff=nodiff
 *.md       diff=nodiff
 *.markdown diff=nodiff
+mkpost.sh  diff=nodiff
+.gitattributes diff=nodiff
