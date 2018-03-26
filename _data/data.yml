@@ -12,8 +12,8 @@ website:
 # Theme - Values [ typing | whiteglass | hacking | littlegirl | custom ]
   theme: "typing"
 # Configuration default
-  title: Typing
-  description: Typing - A Theme for Jekyll
+  title: Shylock Hg's Blog
+  description: Welcome to my blog.
   launch: 2016
   metatag:
     google-site-verification:
@@ -60,7 +60,7 @@ website:
         title: Shylock
         name: Shylock
         description: |
-          Hi! I'm Shylock Hg,major in ML & NLP & embedded system :)
+          Hi! I'm Shylock Hg,major in IOT & AI research:)
       share:
         title: "Share this post"
       comments:

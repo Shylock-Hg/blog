@@ -1,6 +1,6 @@
 ---
 layout: hello
-title: Typing
+title: Shylock Hg
 script: [hello.js]
 ---
 
