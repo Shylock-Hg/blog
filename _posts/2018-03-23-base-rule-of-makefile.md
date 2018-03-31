@@ -22,15 +22,17 @@ Base rule of makefile
 
 ## Base rule
 
-target ... : prerequisites ...
-<Tab>recipe
-<Tab>recip
-...
+target ... : prerequisites ... <br/>
+&nbsp;&nbsp;&nbsp;&nbsp; recipe <br/>
+&nbsp;&nbsp;&nbsp;&nbsp; recipe <br/>
+&nbsp;&nbsp;&nbsp;&nbsp; ...    <br/>
 
 ## Target
 
   - generated file name
   - phony target
+
+*note:make search target in `.` and `$(VPATH)` directories.*
 
 ## Prerequisites
   
