@@ -22,7 +22,17 @@ do
                                 mkdir _posts
                         fi
 
+			# replace dash by space
+			title=`echo $OPTARG | sed -e "s/\-/ /g"`
+			# uppercase first letter of each word
+			title=`echo $title | sed -e "s/\b\(.\)/\u\1/g"`
+			# create post by template
 			cp -f template.md _posts/$today-$OPTARG.md
+			# replace title content
+			sed -i "s/Welcome to Jekyll!/$title/g" _posts/"$today"-"$OPTARG".md
+			# replace date content
+			sed -i "s/2018-02-27/$today/g" _posts/"$today"-"$OPTARG".md
+
 
                         if [ -e _posts/$today-$OPTARG.md ]
                         then
