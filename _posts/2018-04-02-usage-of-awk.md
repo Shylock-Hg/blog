@@ -24,8 +24,8 @@ day_quote:
 
 ## Base of script
 
-  pattern { action }
-  pattern { action }
+  pattern { action } <br/>
+  pattern { action } <br/>
   ...
 
 
