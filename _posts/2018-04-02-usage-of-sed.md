@@ -19,7 +19,7 @@ day_quote:
 
 ## Typical usage
 
-  `sed SCRIPT INPUTFILE > OUTPUTFILE`
+  `sed SCRIPT INPUTFILE... > OUTPUTFILE`
 
 *note:if INPUTFILE==OUTPUFILE must call sed with option `-i`.*
 *note:default INPUTFILE is stdin,default OUTPUTFILE is stdout.*
