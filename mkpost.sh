@@ -17,10 +17,10 @@ while getopts 'n:' args
 do
 	case $args in
 		n)
-                        if [ ! -e _posts/ ] 
-                        then
-                                mkdir _posts
-                        fi
+			if [ ! -e _posts/ ] 
+			then
+				mkdir _posts
+			fi
 
 			# replace dash by space
 			title=`echo $OPTARG | sed -e "s/\-/ /g"`
@@ -29,15 +29,19 @@ do
 			# create post by template
 			cp -f template.md _posts/$today-$OPTARG.md
 			# replace title content
-			sed -i "s/Welcome to Jekyll!/$title/g" _posts/"$today"-"$OPTARG".md
+			#sed -i "s/Welcome to Jekyll!/$title/g" _posts/"$today"-"$OPTARG".md
+			sed -i "/title:/c\
+				title: $title" _posts/"$today"-"$OPTARG".md
 			# replace date content
-			sed -i "s/2018-02-27/$today/g" _posts/"$today"-"$OPTARG".md
+			#sed -i "s/2018-02-27/$today/g" _posts/"$today"-"$OPTARG".md
+			sed -i "/date:/c\
+				date: $today" _posts/"$today"-"$OPTARG".md
 
 
-                        if [ -e _posts/$today-$OPTARG.md ]
-                        then
-                                echo "ok!"
-                        fi
+			if [ -e _posts/$today-$OPTARG.md ]
+			then
+				echo "ok!"
+			fi
 			;;
 		?)
 			echo "Unknown argument $OPTARG!"
