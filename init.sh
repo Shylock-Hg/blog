@@ -100,7 +100,7 @@ function _git_checkout(){
 function _deploy_site(){
 
   if [[ $compile == "yes" ]]; then
-    JEKYLL_ENV=production bundle exec jekyll b
+    JEKYLL_ENV=production bundle exec jekyll b --incremental
   fi
 
   _get_destination "_config.yml"
@@ -137,11 +137,11 @@ case $1 in
     msg_finish "Done!"
   ;;
   serve )
-      JEKYLL_ENV=development bundle exec jekyll s
+      JEKYLL_ENV=development bundle exec jekyll s --incremental
       msg_finish "Done!"
     ;;
   build )
-      JEKYLL_ENV=production bundle exec jekyll b
+      JEKYLL_ENV=production bundle exec jekyll b --incremental
       msg_finish "Done!"
     ;;
   post)
