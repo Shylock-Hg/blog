@@ -2,12 +2,12 @@
 layout: post
 title:  "Usage Of Awk"
 date:   2018-04-02
-tags: ['others']
+tags: ['awk','linux']
 published: true
 comments: true
 script: [post.js]
 excerpted: |
-    You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site ...
+   The basic usage of awk.
 day_quote:
   title: Learning!
   description: |
