@@ -6,3 +6,6 @@
 /.jekyll-metadata/
 /Gemfile.lock
 **/*/*.bak
+
+# incremental build
+.jekyll-metadata
