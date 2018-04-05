@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Memory Padding And Packing
+title: "Memory Padding And Packing"
 date: 2018-04-04
 tags: ['c']
 published: true
