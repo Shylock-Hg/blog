@@ -1,22 +1,13 @@
 #! /bin/bash
 
-#get date
-#today=`date +%Y-%m-%d.%H:%M:%S`
-today=`date +%Y-%m-%d`
-#echo $today
+today=$(date +%Y-%m-%d)
 
-#creat post
-#if [ $# -gt 0 ]
-#then
-#	cp -f template.md _posts/$today-$1.md
-#else
-#	echo "invalid count of parameters!"
-#fi
+post=""  #!< name of post
 
-while getopts 'n:' args
+while getopts 'n:h' args
 do
 	case $args in
-		n)
+		n)  #!< name of post
 			if [ ! -e _posts/ ] 
 			then
 				mkdir _posts
@@ -30,18 +21,30 @@ do
 			cp -f template.md _posts/$today-$OPTARG.md
 			# replace title content
 			#sed -i "s/Welcome to Jekyll!/$title/g" _posts/"$today"-"$OPTARG".md
-			sed -i "/^title:\|^title\*:/c\
+			sed -i "/^title:\|^title*:/c\
 				title: $title" _posts/"$today"-"$OPTARG".md
 			# replace date content
 			#sed -i "s/2018-02-27/$today/g" _posts/"$today"-"$OPTARG".md
-			sed -i "/^date:\|^date\*:/c\
+			sed -i "/^date:\|^date*:/c\
 				date: $today" _posts/"$today"-"$OPTARG".md
 
 
 			if [ -e _posts/$today-$OPTARG.md ]
 			then
-				echo "ok!"
+				post=$OPTARG
+				echo "create file!"
 			fi
+
+			;;
+		#t)  #!< tags list ['tag0','tar1'...]
+		#	if [ -e _posts/"$today"-"$post".md ]
+		#	then
+		#		sed -i "/^tags:\|^tags\*:/c\
+		#			tags: $OPTARG" _posts/"$today"-"$post".md
+		#	fi
+		#	;;
+		h)
+			echo "usage: $0 -n <name-of-post> tag0 tag1 ..."
 			;;
 		?)
 			echo "Unknown argument $OPTARG!"
@@ -50,3 +53,14 @@ do
 done
 
 shift $(($OPTIND - 1))
+
+#! get tags list
+#tags=${*/[^ ]\+/"&"}
+if [ -n "$*" ] && [ -e _posts/"$today"-"$post".md ]; then
+	tags=$(sed -e "s/[^ ]\+/\'&\'/g" -e 's/^.\+$/[&]/g' -e 's/ \+/,/g' <<< "$*")
+
+	sed -i "/^tags:\|^tags*:/c\
+		tags: $tags" _posts/"$today"-"$post".md
+	echo "add tags!"
+fi
+
