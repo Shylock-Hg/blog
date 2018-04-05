@@ -21,12 +21,13 @@ do
 			cp -f template.md _posts/$today-$OPTARG.md
 			# replace title content
 			#sed -i "s/Welcome to Jekyll!/$title/g" _posts/"$today"-"$OPTARG".md
-			sed -i "/^title:\|^title*:/c\
-				title: $title" _posts/"$today"-"$OPTARG".md
+			sed -i  -e "/^title:\|^title*:/c title: \"$title\"" \
+				-e "/^date:\|^date*:/c date: $today" \
+				_posts/"$today"-"$OPTARG".md
 			# replace date content
 			#sed -i "s/2018-02-27/$today/g" _posts/"$today"-"$OPTARG".md
-			sed -i "/^date:\|^date*:/c\
-				date: $today" _posts/"$today"-"$OPTARG".md
+			#sed -i "/^date:\|^date*:/c\
+			#	date: $today" _posts/"$today"-"$OPTARG".md
 
 
 			if [ -e _posts/$today-$OPTARG.md ]
