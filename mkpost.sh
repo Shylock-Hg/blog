@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /usr/bin/env bash
 
 today=$(date +%Y-%m-%d)
 
