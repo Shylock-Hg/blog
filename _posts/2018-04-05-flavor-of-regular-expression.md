@@ -34,6 +34,7 @@ day_quote:
   |`*`||
 
 *note:in GNU implement,you can use ERE special metacharacters by `\\`.*
+**BRE tools:sed,grep**
 
 ### ERE
 
@@ -48,7 +49,13 @@ day_quote:
   |`\|`||
 
 *note:ERE include all BRE metachatacters.*
+**ERE tools:awk,egrep,sed -E**
+
+### POSIT character class
+  
+  example: [:digit:]
 
 ## PCRE
 
-
+  *PCRE include all ERE metacharacters.*
+  **PCRE used in most common program language.**
