@@ -21,6 +21,16 @@ day_quote:
 
   `666`,`(+ 4 5)` is typical scheme expression.`(+ 4 5 6)` is same as `(+ (+ 4 5) 6)`.
 
+# Evaluation order
+
+## Normal order(greedy)
+
+  The interpreter first evaluates the operator and operands and the applies the resulting procedure to the resulting arguments.
+
+## Applicative order(lazy)
+
+  Not evaluate the operands until their value were needed.Instead it would extend the expression to only primitive operator.The evaluate the expression.
+
 # Naming Expression
 
   `(define (<symbol> <formal parameters>) <expression>)` 
