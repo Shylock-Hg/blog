@@ -29,7 +29,7 @@ git clone https://github.com/raspberrypi/tools.git
     2. get *config.gz* from raspberry pi. <br/>
     `scp pi@<raspberrypi ip>:/proc/config.gz $HOME/Workspace/raspberrypi/linux`
     3. decompress *config.gz* get *.config*. <br/>
-    `tar -xf config.gz`
+    `zcat config.gz > .config`
     4. generate kernel config. <br/>
     `make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- oldconfig`
 
