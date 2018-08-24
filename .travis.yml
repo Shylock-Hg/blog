@@ -1,0 +1,14 @@
+language : ruby
+os : linux
+
+before_install :
+    - sudo apt-get install ruby
+    - gem install bundler
+    - bundle install
+
+script :
+    - ./init.sh build
+
+after_success :
+    - ./init.sh deploy:site
+
