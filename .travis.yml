@@ -10,5 +10,9 @@ script :
     - ./init.sh build
 
 after_success :
-    - ./init.sh deploy:site
+    - git config user.name "Shylock-Hg"
+    - git congig user.email "tcath2s@gmail.com"
+    - cd _site
+    - git add --all && git commit -m "Update - $(date)"
+    - git push -f "https://${GITHUB_TOKEN}@${TARGET_REPO}"
 
