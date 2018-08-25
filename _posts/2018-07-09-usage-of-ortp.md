@@ -19,11 +19,11 @@ day_quote:
 
 ## client
 
-1. Get source of *ortp* from github,switch to branch *0.25-simulator-fix*(version under 0.27 don't depend on shared library).
+1. Get source of *ortp* from github,switch to branch *0.25-simulator-fix*(version under 0.27 don't depend on special shared library).
 
 <!--2. Add support to *H264* payload by add profile in *ortp/src/avprofile.c* by function *av_profile_init*. -->
 
-2. Build *ortp* by `./autogen.sh && ./configure && make`.
+2. Build *ortp* by `./autogen.sh && ./configure && make` or `mkdir -p ortp.build && cd ortp.build && cmake .. && make -j8`.
 
 3. Install library to system by `sudo make install`.
 
