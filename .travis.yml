@@ -6,6 +6,9 @@ before_install :
     - gem install bundler
     - bundle install
 
+before_script :
+    - git clone https://github.com/Shylock-Hg/Shylock-Hg.github.io.git _site
+
 script :
     - ./init.sh build
 
