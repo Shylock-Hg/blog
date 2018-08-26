@@ -33,7 +33,7 @@ day_quote:
 
 List comprehension : <br/>
 
-It's same as mathematic set comprehension(but list is sequence), such as $S={2\*x | x \in \N, x \leqslant 10}$, it could also be expressed as `[x*2 | x <- [1..10]]` in *Haskell*(But it's sequence but set).
+It's same as mathematic set comprehension(but list is sequence), such as $$S=\{2*x \| x \in \mathcal{N}, x \leqslant 10\}$$, it could also be expressed as `[x*2 | x <- [1..10]]` in *Haskell*(But it's sequence but set).
 
 With condition : <br/>
 

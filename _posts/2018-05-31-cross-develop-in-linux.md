@@ -2,7 +2,7 @@
 layout: post
 title: "Cross Develop In Linux"
 date: 2018-05-31
-tags: ['embeded-system','linux']
+tags: ['embedded-system','linux']
 published: true
 comments: true
 script: [post.js]
