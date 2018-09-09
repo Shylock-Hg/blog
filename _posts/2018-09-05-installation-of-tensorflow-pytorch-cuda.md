@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Installation Of Tensorflow Gpu"
+title: "Installation Of Tensorflow Pytorch Gpu"
 date: 2018-09-05
 tags: ['tensorflow','pytorch','cuda']
 published: true
