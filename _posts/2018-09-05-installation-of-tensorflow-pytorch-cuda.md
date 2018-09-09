@@ -32,13 +32,15 @@ Arch Linux
 
 ## Install TensorFlow-cuda
 
-1. Run `sudo pacman -Sy python-tensorflow-cuda`.
+1. Run `sudo pacman -Sy python-tensorflow-cuda`.(or by *pip* or by *conda*)
 2. Clone tensorflow models from *https://github.com/tensorflow/models.git*.
 3. Run a model to verify installation.
 
 ## Install Pytorch-cuda
 
-1. Run `sudo pacman -Sy python-pytorch-cuda`.
+1. Run `sudo pacman -Sy python-pytorch-cuda`.(or by *pip* or *conda*)
 2. Clone tensorflow models from *https://github.com/pytorch/examples.git*.
 3. Run a model to verify installation.
+
+*note:install in the way just need to pay attention to conflict between driver and pytorch/tensorflow.*
 

@@ -12,6 +12,7 @@ gem 'pygments.rb', '~> 1.2.1'
 gem 'bigdecimal', '~> 1.3.4'
 gem 'rake', '~> 12.3.0'
 gem 'jekyll', '~> 3.7.2'
+gem 'html-proofer'
 
 group :jekyll_plugins do
   gem 'jekyll-coffeescript', '~> 1.1.0'
