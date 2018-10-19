@@ -12,10 +12,18 @@ before_script :
 script :
     - ./init.sh build
 
-after_success :
-    - git config user.name "Shylock-Hg"
-    - git congig user.email "tcath2s@gmail.com"
-    - cd _site
-    - git add --all && git commit -m "Update - $(date)"
-    - git push -f "https://${GITHUB_TOKEN}@${TARGET_REPO}"
+#after_success :
+#    - git config user.name "Shylock-Hg"
+#    - git congig user.email "tcath2s@gmail.com"
+#    - cd _site
+#    - git add --all && git commit -m "Update - $(date)"
+#    - git push -f "https://${GITHUB_TOKEN}@${TARGET_REPO}"
 
+deploy:
+    provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+    keep-history: true
+    repo: https://github.com/Shylock-Hg/Shylock-Hg.github.io.git
+    on:
+        branch: master
