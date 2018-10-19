@@ -24,6 +24,9 @@ deploy:
     skip-cleanup: true
     github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
     keep-history: true
-    repo: https://github.com/Shylock-Hg/Shylock-Hg.github.io.git
     on:
         branch: master
+    local_dir: _site
+    repo: https://github.com/Shylock-Hg/Shylock-Hg.github.io.git
+    target_branch: master
+    committer-from-gh: true
