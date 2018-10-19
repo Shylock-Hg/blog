@@ -24,9 +24,10 @@ deploy:
     skip-cleanup: true
     github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
     keep-history: true
+    email: tcath2s@gmail.com
+    name: 'Shylock Hg'
     on:
         branch: master
-    local_dir: _site
-    repo: https://github.com/Shylock-Hg/Shylock-Hg.github.io.git
+#    local_dir: _site
+    repo: Shylock-Hg/Shylock-Hg.github.io
     target_branch: master
-    committer-from-gh: true
