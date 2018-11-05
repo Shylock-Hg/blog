@@ -21,8 +21,8 @@ group :jekyll_plugins do
   gem 'jekyll-youtube', '~> 1.0.0'
   gem 'bootstrap', '~> 4.0.0'
   gem 'jekyll-tagging', '~> 1.1.0'
-  gem 'jemoji', '~> 0.10.1'
-  gem 'jekyll-email-protect', '~> 1.0.3'
+  gem 'jemoji', '~> 0.9.0'
+  gem 'jekyll-email-protect', '~> 1.1.0'
   gem 'jektify', '~> 1.0.2'
 end
 
