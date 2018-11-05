@@ -11,7 +11,7 @@ gem 'json', '~> 2.1.0'
 gem 'pygments.rb', '~> 1.2.1'
 gem 'bigdecimal', '~> 1.3.4'
 gem 'rake', '~> 12.3.0'
-gem 'jekyll', '~> 3.7.2'
+gem 'jekyll', '~> 3.8.4'
 gem 'html-proofer'
 
 group :jekyll_plugins do
