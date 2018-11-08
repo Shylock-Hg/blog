@@ -13,6 +13,7 @@ before_install :
 script :
 #    - ./init.sh build
      - JEKYLL_ENV=production bundle exec jekyll b
+     - docker build -t shylockhg/blog .
 
 #after_success :
 #    - git config user.name "Shylock-Hg"
