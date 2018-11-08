@@ -1,5 +1,6 @@
 language : ruby
 os : linux
+services: docker
 
 before_install :
 #    - sudo apt-get install ruby
@@ -21,7 +22,7 @@ script :
 #    - git push -f "https://${GITHUB_TOKEN}@${TARGET_REPO}"
 
 deploy:
-    provider: pages
+  - provider: pages
     skip-cleanup: true
     github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
 #    keep-history: true
@@ -32,3 +33,8 @@ deploy:
 #    local_dir: _site
     repo: Shylock-Hg/Shylock-Hg.github.io
     target_branch: master
+  - provider: script
+    script: ./.travis-ci/deploy-docker.sh
+    on:
+        branch: master
+    skip_cleanup: true
