@@ -3,7 +3,7 @@ os : linux
 services: docker
 
 before_install :
-    - sudo apt-get install ruby
+#    - sudo apt-get install ruby
     - gem install bundler
     - bundle install
 
@@ -11,8 +11,8 @@ before_install :
 #    - git clone https://github.com/Shylock-Hg/Shylock-Hg.github.io.git _site
 
 script :
-    - ./init.sh build
-    - docker build .
+#    - ./init.sh build
+     - JEKYLL_ENV=production bundle exec jekyll b
 
 #after_success :
 #    - git config user.name "Shylock-Hg"
