@@ -31,7 +31,7 @@ deploy:
     name: 'Shylock Hg'
     on:
         branch: master
-#    local_dir: _site
+    local_dir: _site
     repo: Shylock-Hg/Shylock-Hg.github.io
     target_branch: master
   - provider: script
