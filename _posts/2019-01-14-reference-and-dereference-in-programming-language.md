@@ -15,7 +15,6 @@ day_quote:
 ---
 
 * Indice
-
 {: toc}
 
 ## Naive Stage
