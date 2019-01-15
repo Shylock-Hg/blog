@@ -19,7 +19,7 @@ day_quote:
 
 ## Naive Stage
 
-The naive reference is pointer in c programming language.In c language, we use & and * operator to reference and dereference one data structure, such as bellow:</br>
+The naive reference is pointer in c programming language.In c language, we use & and * operator to reference and dereference one data structure, such as bellow:<br/>
 
 ```c
 data_t *p = &data;  //!< reference `data`
@@ -28,7 +28,7 @@ data_t *p = &data;  //!< reference `data`
 
 ## Primitive reference type
 
-The modern programming language not recommend pointer but independent reference type.In c++ language, we use & operator to reference data structure and automatic dereference the reference by compiler, such as bellow:</br>
+The modern programming language not recommend pointer but independent reference type.In c++ language, we use & operator to reference data structure and automatic dereference the reference by compiler, such as bellow:<br/>
 
 ```c++
 data_t &r = data;  //!< reference `data`
@@ -44,9 +44,9 @@ r;  //!< automatic dereference `data`
 
 ## The Ownership and Borrowing
 
-The Ownership and Borrowing is the concepts in RUST programming language.But they are related to reference for that reference is one implementation of Borrowing.
-The main diffrence of Ownership and Borrowing is the `Drop` trait, Ower implement it but Borrower not.There are some samilar concepts in other languages, such as *Smart Pointer*(One implementations of Ownership) and reference(One implementation of Borrowing) in c++, through they distinguish Ownership by *descrutor*.</br>
-There are some typical implementations of Ownership and Borrowing in RUST as bellow:</br>
+The Ownership and Borrowing is the concepts in RUST programming language.But they are related to reference for that reference is one implementation of Borrowing.<br/>
+The main diffrence of Ownership and Borrowing is the `Drop` trait, Ower implement it but Borrower not.There are some samilar concepts in other languages, such as *Smart Pointer*(One implementations of Ownership) and reference(One implementation of Borrowing) in c++, through they distinguish Ownership by *destructor*.<br/>
+There are some typical implementations of Ownership and Borrowing in RUST as bellow:<br/>
 
 |Owner                  |Borrowser                     |
 |:--                    |:--                           |
