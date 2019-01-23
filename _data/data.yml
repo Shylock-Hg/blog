@@ -94,7 +94,7 @@ userdata:
   email: tcath2s@gmail.com # E.g: youremail@domain.com
   twitter: "@shylockhg" # E.g: "@my_twitter"
   disqus:
-    username: shylock-hg-github-io-1 # E.g: myuser
+    username: shylock-netlify-com # E.g: myuser
   # You can add at most 5 social. If you do not want 5, you can remove the block containing: title, id, icon, url.
   socials:
     title: Follow Me!
