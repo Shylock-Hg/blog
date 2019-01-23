@@ -23,17 +23,17 @@ script :
 #    - git push -f "https://${GITHUB_TOKEN}@${TARGET_REPO}"
 
 deploy:
-  - provider: pages
-    skip-cleanup: true
-    github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-#    keep-history: true
-    email: tcath2s@gmail.com
-    name: 'Shylock Hg'
-    on:
-        branch: master
-    local_dir: _site
-    repo: Shylock-Hg/Shylock-Hg.github.io
-    target_branch: master
+#  - provider: pages
+#    skip-cleanup: true
+#    github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+##    keep-history: true
+#    email: tcath2s@gmail.com
+#    name: 'Shylock Hg'
+#    on:
+#       branch: master
+#    local_dir: _site
+#    repo: Shylock-Hg/Shylock-Hg.github.io
+#    target_branch: master
   - provider: script
     script: ./.travis-ci/deploy-docker.sh
     on:
